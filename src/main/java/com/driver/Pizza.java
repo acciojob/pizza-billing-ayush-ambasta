@@ -56,6 +56,10 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
+        if(!this.bill.isEmpty()){
+            return this.bill;
+        }
+
         if(isVeg){
             this.bill+="Base Price Of The Pizza: 300\n";
         }else{
