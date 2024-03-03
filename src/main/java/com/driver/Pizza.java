@@ -64,8 +64,10 @@ public class Pizza {
         if(this.isExtraCheese){
             this.bill+="Extra Cheese Added: "+80+"\n";
         }
-        if(this.isExtraToppings){
+        if(this.isExtraToppings && this.isVeg){
             this.bill+="Extra Toppings Added: "+70+"\n";
+        }else if(this.isExtraToppings){
+            this.bill+="Extra Toppings Added: "+120+"\n";
         }
         if(this.isTakeAway){
             this.bill+="Paperbag Added: "+20+"\n";
